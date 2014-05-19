@@ -1,8 +1,12 @@
 #Installing PHP from source
 
+###Pre-requisites:
+libxml : `apt-get install libxml2-dev`
+
+
 #####Configuration script
 After extracting the compressed source file configure the installation with this command. This is a good base command for things that will be required
-`  ./configure --with-pear=/usr/share/php --with-bz2 --with-curl --with-gd --enable-calendar --enable-mbstring --enable-bcmath --enable-sockets --with-libxml-dir=/usr  --with-regex=php --with-zlib --with-regex=php --with-zlib --with-mysql --with-mysqli --with-apxs2=/usr/local/apache/bin/apxs`
+`./configure --with-pear=/usr/share/php --with-bz2 --with-curl --with-gd --enable-calendar --enable-mbstring --enable-bcmath --enable-sockets --with-regex=php --with-zlib --with-regex=php --with-zlib --with-mysql --with-mysqli --with-apxs2=/usr/local/apache/bin/apxs`
 
 `make`
 
