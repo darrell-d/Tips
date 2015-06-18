@@ -15,7 +15,7 @@
  
 **Restore a database**
 
-    mysql> create database sugarcrm;
+    mysql> create database [database];
   
     Query OK, 1 row affected (0.02 sec)
 
