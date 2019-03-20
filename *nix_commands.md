@@ -1,4 +1,4 @@
-#MYSQL
+# MYSQL
 
 **Make a database backup dump**
 
@@ -24,12 +24,39 @@
     !#> mysql -u root -p[root_password] [database_name] < dumpfilename.sql
 
 
-#BASH
-** & vs && **
+# BASH
+**& vs &&**
 
 &:
+
 If a command is terminated by the control operator &, the shell executes the command in the background in a subshell. The shell does not wait for the command to finish, and the return status is 0. Commands separated by a ; are executed sequentially; the shell waits for each command to terminate in turn. The return status is the exit status of the last command executed.
 
 &&:
+
 Pretty much means AND like you're used to. Runs commands in sequence
 
+# Finding things
+
+`grep -rnw '/path/to/somewhere/' -e 'pattern'`
+
+Usually I want to do this above
+
+`find . -name testfile.txt`
+
+Find a file called testfile.txt in current and sub-directories.
+
+`find /home -name '*.jpg`
+
+Find all `.jpg` files in the `/home` and sub-directories.
+
+`find . -type f -empty`
+
+Find an empty file within the current directory.
+
+`find /home -user exampleuser -mtime 7 -iname ".db"`
+Find all `.db` files (ignoring text case) modified in the last 7 days by a user named exampleuser.
+
+# VIM
+Forgot to sudo in vim? Say no more, I got you.
+
+`:w !sudo tee %`
