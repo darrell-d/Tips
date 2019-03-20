@@ -22,3 +22,14 @@
     !#> mysql -u root -p[password] [database] < dumpfile.sql
 
     !#> mysql -u root -p[root_password] [database_name] < dumpfilename.sql
+
+
+#BASH
+** & vs && **
+
+&:
+If a command is terminated by the control operator &, the shell executes the command in the background in a subshell. The shell does not wait for the command to finish, and the return status is 0. Commands separated by a ; are executed sequentially; the shell waits for each command to terminate in turn. The return status is the exit status of the last command executed.
+
+&&:
+Pretty much means AND like you're used to. Runs commands in sequence
+
