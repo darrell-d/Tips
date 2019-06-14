@@ -35,6 +35,9 @@ If a command is terminated by the control operator &, the shell executes the com
 
 Pretty much means AND like you're used to. Runs commands in sequence
 
+alias:
+If you want to run the default version of an aliased command use \. EG: `\ls` to run the non aliased version.
+
 # Finding things
 
 `grep -rnw '/path/to/somewhere/' -e 'pattern'`
@@ -60,3 +63,9 @@ Find all `.db` files (ignoring text case) modified in the last 7 days by a user 
 Forgot to sudo in vim? Say no more, I got you.
 
 `:w !sudo tee %`
+
+#Useful commands
+`alternatives`: Set the default version of a commmand. EG:
+`alternatives --set python /usr/bin/python3.5`
+`alternatives --display python`
+This command is system wide
