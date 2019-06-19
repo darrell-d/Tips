@@ -69,3 +69,7 @@ Forgot to sudo in vim? Say no more, I got you.
 `alternatives --set python /usr/bin/python3.5`
 `alternatives --display python`
 This command is system wide
+
+`CTRL-a :sessionname name` -- set screen name after starting a session
+`screen -xS name` -- connect to a screen by name
+`screen -S name` start screen with a name
