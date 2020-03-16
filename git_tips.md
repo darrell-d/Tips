@@ -25,3 +25,6 @@ Set your email address:
 Verify your configuration by displaying your configuration file:
 
 *cat .git/config*
+
+## Save credentials on server
+`git config --global credential.helper store` followed by `git pull`
