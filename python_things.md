@@ -1,7 +1,7 @@
 
-#Python
+# Python
 
-# Check for None
+## Check for None
 
 ```
 if self.source is None:
