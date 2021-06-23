@@ -28,3 +28,10 @@ Verify your configuration by displaying your configuration file:
 
 ## Save credentials on server
 `git config --global credential.helper store` followed by `git pull`
+
+
+# Push a new branch up to Github
+1. Commit things to your local branch
+2. `git branch -M main`
+3. `git remote add origin GIT_URL`
+4.  `git push -u origin main`
