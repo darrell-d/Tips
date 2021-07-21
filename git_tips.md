@@ -35,3 +35,7 @@ Verify your configuration by displaying your configuration file:
 2. `git branch -M main`
 3. `git remote add origin GIT_URL`
 4.  `git push -u origin main`
+
+# Remove file from tracking
+`git rm --cached <file>`
+`git rm -r --cached <folder>`
