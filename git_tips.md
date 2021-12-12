@@ -45,3 +45,4 @@ Verify your configuration by displaying your configuration file:
 - Do `git merge`. See failure with unrelated histories error message
 
  - Run `git pull origin master --allow-unrelated-histories`
+
