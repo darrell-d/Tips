@@ -73,3 +73,7 @@ This command is system wide
 `CTRL-a :sessionname name` -- set screen name after starting a session
 `screen -xS name` -- connect to a screen by name
 `screen -S name` start screen with a name
+
+# ssh keyfile permissions (Permissions 0644 for 'key' are too open.)
+ `chmod 600 discord-bot-key.pem`
+
